@@ -52,11 +52,15 @@
     "RunOnceActivity.git.unshallow": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/aidyn/Desktop/java/Library",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.5678161",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -78,6 +82,7 @@
       <updated>1758373912091</updated>
       <workItem from="1758373913160" duration="12075000" />
       <workItem from="1758558828862" duration="3054000" />
+      <workItem from="1758568876930" duration="4369000" />
     </task>
     <servers />
   </component>
