@@ -1,0 +1,50 @@
+# =========================
+# Общие файлы Java
+# =========================
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# Кэш и временные файлы
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+out/
+build/
+
+# =========================
+# Eclipse
+# =========================
+.project
+.classpath
+.settings/
+bin/
+tmp/
+
+# =========================
+# Maven / Gradle
+# =========================
+target/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# =========================
+# Logs
+# =========================
+*.log
+hs_err_pid*
+replay_pid*
