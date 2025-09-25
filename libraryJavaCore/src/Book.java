@@ -1,6 +1,11 @@
+import java.io.Serializable;
+import java.util.concurrent.atomic.AtomicInteger;
 
-public class Book {
-    private String isbn;
+public class Book implements Serializable {
+    private static final AtomicInteger counter = new AtomicInteger();
+
+    private static final long serialVersionUID = 1L;
+    private Long id;
     private String title;
     private Author author;
     private int publicationYear ;
@@ -9,8 +14,8 @@ public class Book {
     private int availableCopies;
 
 
-    public Book(String isbn, String title, Author author, int publicationYear, Genre genre, int totalCopies, int availableCopies) {
-    	this.isbn = isbn;
+    public Book(String id, String title, Author author, int publicationYear, Genre genre, int totalCopies, int availableCopies) {
+    	this.id = (long) counter.incrementAndGet();
     	this.title = title;
     	this.author = author;
     	this.publicationYear = publicationYear;
@@ -25,12 +30,8 @@ public class Book {
 
 
 
-    public String getIsbn() {
-    	return isbn;
-    }
-
-    public void setIsbn(String newIsbn) {
-    	this.isbn = newIsbn;
+    public Long getId(){
+        return id;
     }
 
     public String getTitle() {

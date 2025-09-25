@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f39fd36-f775-4ef4-8d2b-470b5b0cdf3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/libraryJavaCore/data/books.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryJavaCore/src/LibraryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +56,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;library-service&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -83,7 +87,10 @@
       <workItem from="1758373913160" duration="12075000" />
       <workItem from="1758558828862" duration="3054000" />
       <workItem from="1758617424156" duration="369000" />
-      <workItem from="1758617803836" duration="1454000" />
+      <workItem from="1758617803836" duration="5486000" />
+      <workItem from="1758736095067" duration="6983000" />
+      <workItem from="1758744235310" duration="694000" />
+      <workItem from="1758777145743" duration="1151000" />
     </task>
     <servers />
   </component>

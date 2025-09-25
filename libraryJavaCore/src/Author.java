@@ -1,10 +1,12 @@
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Author {
+public class Author implements Serializable {
 
     private static final AtomicInteger counter = new AtomicInteger();
 
+    private static final long serialVersionUID = 1L;
     private final Long id;
     private String firstName;
     private String lastName;
