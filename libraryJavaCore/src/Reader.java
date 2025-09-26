@@ -11,7 +11,7 @@ public class Reader {
     private String phoneNumber;
     private LocalDate registrationDate;
 
-    public Reader(Long libraryCardId, String firstName, String lastName, String email, String phoneNumber, LocalDate registrationDate){
+    public Reader(String firstName, String lastName, String email, String phoneNumber, LocalDate registrationDate){
         this.libraryCardId = (long) counter.incrementAndGet();
         this.firstName = firstName;
         this.lastName = lastName;

@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f39fd36-f775-4ef4-8d2b-470b5b0cdf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/libraryJavaCore/data/books.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryJavaCore/src/LibraryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/data/authors.db" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/data/library.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/data/books.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/LibraryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/LibraryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,22 +56,46 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;library-service&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "2ndway",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Library" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Library" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,7 +118,9 @@
       <workItem from="1758617803836" duration="5486000" />
       <workItem from="1758736095067" duration="6983000" />
       <workItem from="1758744235310" duration="694000" />
-      <workItem from="1758777145743" duration="1151000" />
+      <workItem from="1758777145743" duration="17894000" />
+      <workItem from="1758815326923" duration="4875000" />
+      <workItem from="1758876186455" duration="14252000" />
     </task>
     <servers />
   </component>

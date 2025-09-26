@@ -1,11 +1,12 @@
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Book implements Serializable {
     private static final AtomicInteger counter = new AtomicInteger();
 
     private static final long serialVersionUID = 1L;
-    private Long id;
+    private final Long id;
     private String title;
     private Author author;
     private int publicationYear ;
@@ -13,8 +14,12 @@ public class Book implements Serializable {
     private int totalCopies;
     private int availableCopies;
 
+    public Book(){
+        this.id = (long) counter.incrementAndGet();
+    }
 
-    public Book(String id, String title, Author author, int publicationYear, Genre genre, int totalCopies, int availableCopies) {
+    public Book(String title, Author author, int publicationYear, Genre genre, int totalCopies,
+                int availableCopies) {
     	this.id = (long) counter.incrementAndGet();
     	this.title = title;
     	this.author = author;
@@ -23,11 +28,6 @@ public class Book implements Serializable {
     	this.totalCopies = totalCopies;
     	this.availableCopies = availableCopies;
     }
-
-    public Book() {
-
-    }
-
 
 
     public Long getId(){
@@ -85,7 +85,30 @@ public class Book implements Serializable {
     	this.availableCopies = newAvailableCopies;
     }
 
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj){
+            return true;
+        }
+        if(obj == null || getClass() != obj.getClass()){
+            return false;
+        }
+        Book otherBook = (Book) obj;
+        if(this.title.equals(otherBook.title) && this.author.equals(otherBook.author)){
+            return true;
+        }else {
+            return false;
+        }
+    }
 
+    @Override
+    public int hashCode(){
+        return Objects.hash(title);
+    }
 
+    @Override
+    public String toString(){
+        return getAuthor() + "  |  " + getTitle();
+    }
 
 }
