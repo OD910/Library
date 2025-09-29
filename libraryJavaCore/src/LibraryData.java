@@ -1,13 +1,39 @@
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class LibraryData implements Serializable {
-    private List<Book> books;
-    private List<Author> authors;
-    private List<Reader> readers;
-    private List<BorrowingRecord> borrowingRecords;
+    private List<Book> books = new ArrayList<>();
+    private List<Author> authors = new ArrayList<>();
+    private List<Reader> readers = new ArrayList<>();
+    private List<BorrowingRecord> borrowingRecords = new ArrayList<>();
+    private long nextBookId;
+    private long nextReaderId;
+    private long nextAuthorId;
 
+    public long getNextReaderId() {
+        return nextReaderId;
+    }
 
+    public void setNextReaderId(long nextReaderId) {
+        this.nextReaderId = nextReaderId;
+    }
+
+    public long getNextBookId() {
+        return nextBookId;
+    }
+
+    public void setNextBookId(long nextBookId) {
+        this.nextBookId = nextBookId;
+    }
+
+    public long getNextAuthorId() {
+        return nextAuthorId;
+    }
+
+    public void setNextAuthorId(long nextAuthorId) {
+        this.nextAuthorId = nextAuthorId;
+    }
 
     public List<Book> getBooks() {
         return books;

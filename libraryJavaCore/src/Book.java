@@ -3,10 +3,10 @@ import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Book implements Serializable {
-    private static final AtomicInteger counter = new AtomicInteger();
+
 
     private static final long serialVersionUID = 1L;
-    private final Long id;
+    private Long id;
     private String title;
     private Author author;
     private int publicationYear ;
@@ -15,12 +15,12 @@ public class Book implements Serializable {
     private int availableCopies;
 
     public Book(){
-        this.id = (long) counter.incrementAndGet();
+
     }
 
-    public Book(String title, Author author, int publicationYear, Genre genre, int totalCopies,
+    public Book(Long id, String title, Author author, int publicationYear, Genre genre, int totalCopies,
                 int availableCopies) {
-    	this.id = (long) counter.incrementAndGet();
+    	this.id = id;
     	this.title = title;
     	this.author = author;
     	this.publicationYear = publicationYear;
@@ -108,7 +108,7 @@ public class Book implements Serializable {
 
     @Override
     public String toString(){
-        return getAuthor() + "  |  " + getTitle();
+        return getId() + "  |  " + getAuthor() + "  |  " + getTitle() + "  |  " + getTotalCopies() + "  |  " + getAvailableCopies();
     }
 
 }

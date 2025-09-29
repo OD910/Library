@@ -5,10 +5,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Author implements Serializable {
 
-    private static final AtomicInteger counter = new AtomicInteger();
+
 
     private static final long serialVersionUID = 1L;
-    private final Long id;
+    private Long id;
     private String firstName;
     private String lastName;
     private LocalDate dateOfBirth;
@@ -35,8 +35,8 @@ public class Author implements Serializable {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Author(String firstName, String lastName, LocalDate dateOfBirth){
-        this.id = (long) counter.incrementAndGet();
+    public Author(Long id, String firstName, String lastName, LocalDate dateOfBirth){
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
