@@ -1,31 +1,32 @@
+import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.concurrent.atomic.AtomicInteger;
 
-public class BorrowingRecord {
-    private Long id;
+public class BorrowingRecord implements Serializable {
+    private static final AtomicInteger counter = new AtomicInteger();
+
+    private static final long serialVersionUID = 1L;
+    private final Long id;
     private Book book;
     private Reader reader;
     private LocalDate dueDate;
     private LocalDate returnDate;
 
-    public BorrowingRecord(Long id, Book book, Reader reader, LocalDate dueDate, LocalDate returnDate) {
-    	this.id = id;
+    public BorrowingRecord(Book book, Reader reader, LocalDate dueDate) {
+    	this.id = (long) counter.incrementAndGet();
     	this.book = book;
     	this.reader = reader;
     	this.dueDate = dueDate;
-    	this.returnDate = returnDate;
+    	this.returnDate = null;
     }
 
     public BorrowingRecord(){
-
+        this.id = (long) counter.incrementAndGet();
     }
 
 
     public Long getId() {
     	return id;
-    }
-
-    public void setId(Long newId) {
-    	this.id = newId;
     }
 
     public Book getBook() {
@@ -58,6 +59,11 @@ public class BorrowingRecord {
 
     public void setReturnDate(LocalDate newReturnDate) {
     	this.returnDate = newReturnDate;
+    }
+
+    @Override
+    public String toString(){
+        return getId() + "  " + getBook().getTitle() + "  " + getReader().getEmail() + "  " + getDueDate() + "  " + getReturnDate();
     }
 }
 

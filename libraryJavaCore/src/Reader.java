@@ -1,24 +1,32 @@
+import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Reader {
-    private static final AtomicInteger counter = new AtomicInteger();
+public class Reader implements Serializable {
+//    private static final AtomicInteger counter = new AtomicInteger();
 
-    private final Long libraryCardId;
+    private static final long serialVersionUID = 1L;
+    private Long libraryCardId;
     private String firstName;
     private String lastName;
     private String email;
     private String phoneNumber;
     private LocalDate registrationDate;
 
-    public Reader(Long libraryCardId, String firstName, String lastName, String email, String phoneNumber, LocalDate registrationDate){
-        this.libraryCardId = (long) counter.incrementAndGet();
+    public Reader(Long libraryCardId, String firstName, String lastName, String email, String phoneNumber){
+        this.libraryCardId = libraryCardId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.registrationDate = registrationDate;
+        this.registrationDate = LocalDate.now();
     }
+
+    public Reader(){
+
+    }
+
 
     public Long getLibraryCardId(){
         return libraryCardId;
@@ -52,6 +60,25 @@ public class Reader {
     }
     public void setRegistrationDate(LocalDate registrationDate){
         this.registrationDate = registrationDate;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj) return true;
+        if(obj == null || obj.getClass() != this.getClass()) return false;
+        Reader otherReader = new Reader();
+        return Objects.equals(this.libraryCardId, otherReader.libraryCardId);
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(libraryCardId);
+    }
+
+    @Override
+    public String toString(){
+        return libraryCardId + " " + firstName + " " + lastName +
+                " " + email + " " + phoneNumber + " " + registrationDate;
     }
 
 

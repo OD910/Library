@@ -1,6 +1,12 @@
+import java.io.Serializable;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 
-public class Book {
-    private String isbn;
+public class Book implements Serializable {
+
+
+    private static final long serialVersionUID = 1L;
+    private Long id;
     private String title;
     private Author author;
     private int publicationYear ;
@@ -8,9 +14,13 @@ public class Book {
     private int totalCopies;
     private int availableCopies;
 
+    public Book(){
 
-    public Book(String isbn, String title, Author author, int publicationYear, Genre genre, int totalCopies, int availableCopies) {
-    	this.isbn = isbn;
+    }
+
+    public Book(Long id, String title, Author author, int publicationYear, Genre genre, int totalCopies,
+                int availableCopies) {
+    	this.id = id;
     	this.title = title;
     	this.author = author;
     	this.publicationYear = publicationYear;
@@ -19,18 +29,9 @@ public class Book {
     	this.availableCopies = availableCopies;
     }
 
-    public Book() {
 
-    }
-
-
-
-    public String getIsbn() {
-    	return isbn;
-    }
-
-    public void setIsbn(String newIsbn) {
-    	this.isbn = newIsbn;
+    public Long getId(){
+        return id;
     }
 
     public String getTitle() {
@@ -84,7 +85,30 @@ public class Book {
     	this.availableCopies = newAvailableCopies;
     }
 
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj){
+            return true;
+        }
+        if(obj == null || getClass() != obj.getClass()){
+            return false;
+        }
+        Book otherBook = (Book) obj;
+        if(this.title.equals(otherBook.title) && this.author.equals(otherBook.author)){
+            return true;
+        }else {
+            return false;
+        }
+    }
 
+    @Override
+    public int hashCode(){
+        return Objects.hash(title);
+    }
 
+    @Override
+    public String toString(){
+        return getId() + "  |  " + getAuthor() + "  |  " + getTitle() + "  |  " + getTotalCopies() + "  |  " + getAvailableCopies();
+    }
 
 }
