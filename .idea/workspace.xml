@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5f39fd36-f775-4ef4-8d2b-470b5b0cdf3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/data/library.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/BorrowingRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/BorrowingRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/LibraryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/LibraryData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/LibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryJavaCore/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryJavaCore/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="2ndway" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +54,7 @@
     &quot;Application.Test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;2ndway&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -125,6 +117,8 @@
       <workItem from="1759082453957" duration="4444000" />
       <workItem from="1759154524163" duration="4025000" />
       <workItem from="1759161594878" duration="425000" />
+      <workItem from="1759415849168" duration="594000" />
+      <workItem from="1759482646054" duration="1015000" />
     </task>
     <servers />
   </component>
