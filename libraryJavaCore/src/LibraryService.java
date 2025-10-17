@@ -13,6 +13,7 @@ public class LibraryService {
     private long nextReaderId = 1;
     private long nextAuthorId = 1;
 
+
     private static final String LIBRARY_DB = "libraryJavaCore/data/library.db";
 
 
@@ -186,19 +187,19 @@ public class LibraryService {
         return null;
     }
 
-    public void addNewReader(String firstName, String lastName, String email, String phoneNumber){
+    public Reader addNewReader(String firstName, String lastName, String email, String phoneNumber){
         boolean exists = false;
         for(Reader reader : this.readers){
             if(reader.getEmail().equalsIgnoreCase(email)){
                 exists = true;
+                System.out.println("Читатель с таким email уже есть! ");
                 break; //завершаем цикл потому что уже есть такой чувак, а в мейне сами напишем что такой чел есть
             }
         }
-        if(!exists){
             Reader newReader = new Reader(nextReaderId++, firstName, lastName, email, phoneNumber);
             this.readers.add(newReader);
             saveData();
-        }
+        return newReader;
     }
 
     public void showAllReaders(){
@@ -280,7 +281,30 @@ public class LibraryService {
         }
     }
 
+    public Reader findReaderByEmail(String email){
+        for(Reader reader : this.readers){
+            if(reader.getEmail().equalsIgnoreCase(email)){
+                return reader;
+            }
+        }
+        return null;
+    }
 
+    public void showMyBorrowedBooks(Long readerId){
+        boolean foundBooks = false;
+        for(BorrowingRecord br : this.borrowingRecords){
+            if(br.getReader().getLibraryCardId().equals(readerId) && br.getReturnDate() == null){
+                foundBooks = true;
+                System.out.println("=================================");
+                System.out.println("Название книги: " + br.getBook().getTitle());
+                System.out.println("Вернуть до: " + br.getReturnDate());
+                System.out.println("=================================");
+            }
+        }
+        if(!foundBooks){
+            System.out.println("Нет активных записей!");
+        }
+    }
 
 
 }
